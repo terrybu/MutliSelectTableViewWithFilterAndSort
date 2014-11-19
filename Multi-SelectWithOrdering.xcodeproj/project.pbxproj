@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA05BFF71A153F1F00C57A38 /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = AA05BFF61A153F1F00C57A38 /* Fruit.m */; };
+		AA05BFFA1A1541EF00C57A38 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA05BFF91A1541EF00C57A38 /* HomeViewController.m */; };
+		AAD971C21A150CAB005A9EE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD971C11A150CAB005A9EE5 /* main.m */; };
+		AAD971C51A150CAB005A9EE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD971C41A150CAB005A9EE5 /* AppDelegate.m */; };
+		AAD971CB1A150CAB005A9EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD971C91A150CAB005A9EE5 /* Main.storyboard */; };
+		AAD971CD1A150CAB005A9EE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD971CC1A150CAB005A9EE5 /* Images.xcassets */; };
+		AAD971D01A150CAB005A9EE5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD971CE1A150CAB005A9EE5 /* LaunchScreen.xib */; };
+		AAD971DC1A150CAB005A9EE5 /* Multi_SelectWithOrderingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD971DB1A150CAB005A9EE5 /* Multi_SelectWithOrderingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAD971D61A150CAB005A9EE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAD971B41A150CAB005A9EE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAD971BB1A150CAB005A9EE5;
+			remoteInfo = "Multi-SelectWithOrdering";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA05BFF51A153F1F00C57A38 /* Fruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fruit.h; sourceTree = "<group>"; };
+		AA05BFF61A153F1F00C57A38 /* Fruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fruit.m; sourceTree = "<group>"; };
+		AA05BFF81A1541EF00C57A38 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		AA05BFF91A1541EF00C57A38 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		AAD971BC1A150CAB005A9EE5 /* Multi-SelectWithOrdering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multi-SelectWithOrdering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD971C01A150CAB005A9EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAD971C11A150CAB005A9EE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAD971C31A150CAB005A9EE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AAD971C41A150CAB005A9EE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AAD971CA1A150CAB005A9EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAD971CC1A150CAB005A9EE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AAD971CF1A150CAB005A9EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AAD971D51A150CAB005A9EE5 /* Multi-SelectWithOrderingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Multi-SelectWithOrderingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD971DA1A150CAB005A9EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAD971DB1A150CAB005A9EE5 /* Multi_SelectWithOrderingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Multi_SelectWithOrderingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAD971B91A150CAB005A9EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD971D21A150CAB005A9EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAD971B31A150CAB005A9EE5 = {
+			isa = PBXGroup;
+			children = (
+				AAD971BE1A150CAB005A9EE5 /* Multi-SelectWithOrdering */,
+				AAD971D81A150CAB005A9EE5 /* Multi-SelectWithOrderingTests */,
+				AAD971BD1A150CAB005A9EE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAD971BD1A150CAB005A9EE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAD971BC1A150CAB005A9EE5 /* Multi-SelectWithOrdering.app */,
+				AAD971D51A150CAB005A9EE5 /* Multi-SelectWithOrderingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAD971BE1A150CAB005A9EE5 /* Multi-SelectWithOrdering */ = {
+			isa = PBXGroup;
+			children = (
+				AAD971C91A150CAB005A9EE5 /* Main.storyboard */,
+				AA05BFF81A1541EF00C57A38 /* HomeViewController.h */,
+				AA05BFF91A1541EF00C57A38 /* HomeViewController.m */,
+				AA05BFF51A153F1F00C57A38 /* Fruit.h */,
+				AA05BFF61A153F1F00C57A38 /* Fruit.m */,
+				AAD971C31A150CAB005A9EE5 /* AppDelegate.h */,
+				AAD971C41A150CAB005A9EE5 /* AppDelegate.m */,
+				AAD971CC1A150CAB005A9EE5 /* Images.xcassets */,
+				AAD971CE1A150CAB005A9EE5 /* LaunchScreen.xib */,
+				AAD971BF1A150CAB005A9EE5 /* Supporting Files */,
+			);
+			path = "Multi-SelectWithOrdering";
+			sourceTree = "<group>";
+		};
+		AAD971BF1A150CAB005A9EE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAD971C01A150CAB005A9EE5 /* Info.plist */,
+				AAD971C11A150CAB005A9EE5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAD971D81A150CAB005A9EE5 /* Multi-SelectWithOrderingTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAD971DB1A150CAB005A9EE5 /* Multi_SelectWithOrderingTests.m */,
+				AAD971D91A150CAB005A9EE5 /* Supporting Files */,
+			);
+			path = "Multi-SelectWithOrderingTests";
+			sourceTree = "<group>";
+		};
+		AAD971D91A150CAB005A9EE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAD971DA1A150CAB005A9EE5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAD971BB1A150CAB005A9EE5 /* Multi-SelectWithOrdering */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD971DF1A150CAB005A9EE5 /* Build configuration list for PBXNativeTarget "Multi-SelectWithOrdering" */;
+			buildPhases = (
+				AAD971B81A150CAB005A9EE5 /* Sources */,
+				AAD971B91A150CAB005A9EE5 /* Frameworks */,
+				AAD971BA1A150CAB005A9EE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Multi-SelectWithOrdering";
+			productName = "Multi-SelectWithOrdering";
+			productReference = AAD971BC1A150CAB005A9EE5 /* Multi-SelectWithOrdering.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAD971D41A150CAB005A9EE5 /* Multi-SelectWithOrderingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD971E21A150CAB005A9EE5 /* Build configuration list for PBXNativeTarget "Multi-SelectWithOrderingTests" */;
+			buildPhases = (
+				AAD971D11A150CAB005A9EE5 /* Sources */,
+				AAD971D21A150CAB005A9EE5 /* Frameworks */,
+				AAD971D31A150CAB005A9EE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAD971D71A150CAB005A9EE5 /* PBXTargetDependency */,
+			);
+			name = "Multi-SelectWithOrderingTests";
+			productName = "Multi-SelectWithOrderingTests";
+			productReference = AAD971D51A150CAB005A9EE5 /* Multi-SelectWithOrderingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAD971B41A150CAB005A9EE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = TerryBuOrganization;
+				TargetAttributes = {
+					AAD971BB1A150CAB005A9EE5 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					AAD971D41A150CAB005A9EE5 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = AAD971BB1A150CAB005A9EE5;
+					};
+				};
+			};
+			buildConfigurationList = AAD971B71A150CAB005A9EE5 /* Build configuration list for PBXProject "Multi-SelectWithOrdering" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAD971B31A150CAB005A9EE5;
+			productRefGroup = AAD971BD1A150CAB005A9EE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAD971BB1A150CAB005A9EE5 /* Multi-SelectWithOrdering */,
+				AAD971D41A150CAB005A9EE5 /* Multi-SelectWithOrderingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAD971BA1A150CAB005A9EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD971CB1A150CAB005A9EE5 /* Main.storyboard in Resources */,
+				AAD971D01A150CAB005A9EE5 /* LaunchScreen.xib in Resources */,
+				AAD971CD1A150CAB005A9EE5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD971D31A150CAB005A9EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAD971B81A150CAB005A9EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA05BFF71A153F1F00C57A38 /* Fruit.m in Sources */,
+				AAD971C51A150CAB005A9EE5 /* AppDelegate.m in Sources */,
+				AA05BFFA1A1541EF00C57A38 /* HomeViewController.m in Sources */,
+				AAD971C21A150CAB005A9EE5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD971D11A150CAB005A9EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD971DC1A150CAB005A9EE5 /* Multi_SelectWithOrderingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAD971D71A150CAB005A9EE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAD971BB1A150CAB005A9EE5 /* Multi-SelectWithOrdering */;
+			targetProxy = AAD971D61A150CAB005A9EE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAD971C91A150CAB005A9EE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAD971CA1A150CAB005A9EE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAD971CE1A150CAB005A9EE5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAD971CF1A150CAB005A9EE5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAD971DD1A150CAB005A9EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAD971DE1A150CAB005A9EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAD971E01A150CAB005A9EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Multi-SelectWithOrdering/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AAD971E11A150CAB005A9EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Multi-SelectWithOrdering/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AAD971E31A150CAB005A9EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Multi-SelectWithOrderingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multi-SelectWithOrdering.app/Multi-SelectWithOrdering";
+			};
+			name = Debug;
+		};
+		AAD971E41A150CAB005A9EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Multi-SelectWithOrderingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multi-SelectWithOrdering.app/Multi-SelectWithOrdering";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAD971B71A150CAB005A9EE5 /* Build configuration list for PBXProject "Multi-SelectWithOrdering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD971DD1A150CAB005A9EE5 /* Debug */,
+				AAD971DE1A150CAB005A9EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD971DF1A150CAB005A9EE5 /* Build configuration list for PBXNativeTarget "Multi-SelectWithOrdering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD971E01A150CAB005A9EE5 /* Debug */,
+				AAD971E11A150CAB005A9EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD971E21A150CAB005A9EE5 /* Build configuration list for PBXNativeTarget "Multi-SelectWithOrderingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD971E31A150CAB005A9EE5 /* Debug */,
+				AAD971E41A150CAB005A9EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAD971B41A150CAB005A9EE5 /* Project object */;
+}

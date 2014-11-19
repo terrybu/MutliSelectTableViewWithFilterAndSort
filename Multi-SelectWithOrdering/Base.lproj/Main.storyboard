@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NhL-As-0SK">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="jMH-iM-a09">
+            <objects>
+                <viewController id="0k1-ew-k58" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K7F-zT-KVX"/>
+                        <viewControllerLayoutGuide type="bottom" id="oPa-Pi-PMC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aYm-ZY-XWo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="LVc-0p-tVX">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0k1-ew-k58" id="PPp-tX-sRe"/>
+                                </connections>
+                            </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="qLK-lh-6Sv">
+                                <rect key="frame" x="0.0" y="106" width="600" height="29"/>
+                                <segments>
+                                    <segment title="Sort By Name"/>
+                                    <segment title="Sort By Name (Reverse)"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segCtrlAction:" destination="0k1-ew-k58" eventType="valueChanged" id="G5X-8X-tf9"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="30a-Mk-0Cp">
+                                <rect key="frame" x="0.0" y="138" width="600" height="462"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="0k1-ew-k58" id="ObD-fT-X7h"/>
+                                    <outlet property="delegate" destination="0k1-ew-k58" id="WOe-gD-ILt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qLK-lh-6Sv" firstAttribute="top" secondItem="LVc-0p-tVX" secondAttribute="bottom" id="7L6-Bx-yBX"/>
+                            <constraint firstAttribute="trailing" secondItem="LVc-0p-tVX" secondAttribute="trailing" id="FCe-ga-PoK"/>
+                            <constraint firstItem="LVc-0p-tVX" firstAttribute="trailing" secondItem="qLK-lh-6Sv" secondAttribute="trailing" id="KHw-67-t29"/>
+                            <constraint firstItem="30a-Mk-0Cp" firstAttribute="leading" secondItem="aYm-ZY-XWo" secondAttribute="leading" id="KiD-HH-bwB"/>
+                            <constraint firstItem="30a-Mk-0Cp" firstAttribute="leading" secondItem="qLK-lh-6Sv" secondAttribute="leading" id="Mn8-F0-jA3"/>
+                            <constraint firstItem="30a-Mk-0Cp" firstAttribute="bottom" secondItem="oPa-Pi-PMC" secondAttribute="top" id="NGO-r6-bzF"/>
+                            <constraint firstItem="qLK-lh-6Sv" firstAttribute="trailing" secondItem="30a-Mk-0Cp" secondAttribute="trailing" id="jIi-1e-u0q"/>
+                            <constraint firstItem="30a-Mk-0Cp" firstAttribute="top" secondItem="qLK-lh-6Sv" secondAttribute="bottom" constant="2" id="lbV-tZ-Wpi"/>
+                            <constraint firstItem="LVc-0p-tVX" firstAttribute="leading" secondItem="qLK-lh-6Sv" secondAttribute="leading" id="uMn-Wi-NXu"/>
+                            <constraint firstItem="LVc-0p-tVX" firstAttribute="top" secondItem="K7F-zT-KVX" secondAttribute="bottom" id="yWQ-s6-21R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="QUl-sL-BYP"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="Uk5-yL-i1M" id="Tgp-Su-N7j"/>
+                        <outlet property="tableView" destination="30a-Mk-0Cp" id="i5w-d7-zhJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qFl-so-1Xg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Uk5-yL-i1M">
+                    <connections>
+                        <outlet property="delegate" destination="0k1-ew-k58" id="mpG-IM-9dq"/>
+                        <outlet property="searchBar" destination="LVc-0p-tVX" id="AjU-Jv-WUH"/>
+                        <outlet property="searchContentsController" destination="0k1-ew-k58" id="ngN-VP-1p7"/>
+                        <outlet property="searchResultsDataSource" destination="0k1-ew-k58" id="EmI-yY-enx"/>
+                        <outlet property="searchResultsDelegate" destination="0k1-ew-k58" id="65O-lv-gcl"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="2002" y="265"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bn8-Ua-g7W">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NhL-As-0SK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kKe-G0-Cc7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0k1-ew-k58" kind="relationship" relationship="rootViewController" id="ugI-oD-RtY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0BH-G1-lsB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1190" y="265"/>
+        </scene>
+    </scenes>
+</document>
