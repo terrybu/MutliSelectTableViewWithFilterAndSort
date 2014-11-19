@@ -192,7 +192,6 @@
     switch (selectedSegment) {
         case 0: {
             NSLog(@"Sort by alphabetical");
-            
             NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name"
                                                                            ascending:YES];
             NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
@@ -203,6 +202,12 @@
         }
         case 1: {
             NSLog(@"Sort by reverse alphabetical");
+            NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name"
+                                                                           ascending:NO];
+            NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+            NSArray *sortedArray = [fruitsArray sortedArrayUsingDescriptors:sortDescriptors];
+            fruitsArray = [sortedArray mutableCopy];
+            [self.tableView reloadData];
             break;
         }
         default:
