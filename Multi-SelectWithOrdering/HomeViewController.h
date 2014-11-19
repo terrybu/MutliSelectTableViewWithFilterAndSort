@@ -14,6 +14,7 @@
 
 - (IBAction)segCtrlAction:(id)sender;
 
+- (IBAction)doneAction:(id)sender;
 
 
 @end

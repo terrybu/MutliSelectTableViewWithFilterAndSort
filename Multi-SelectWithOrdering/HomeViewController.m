@@ -185,33 +185,37 @@
 }
 
 
-
-
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
-
-
 - (IBAction)segCtrlAction:(id)sender {
     UISegmentedControl *segmentedControl = (UISegmentedControl *) sender;
     NSInteger selectedSegment = segmentedControl.selectedSegmentIndex;
     
     switch (selectedSegment) {
-        case 0:
-            NSLog(@"first");
+        case 0: {
+            NSLog(@"Sort by alphabetical");
+            
+            NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name"
+                                                                           ascending:YES];
+            NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+            NSArray *sortedArray = [fruitsArray sortedArrayUsingDescriptors:sortDescriptors];
+            fruitsArray = [sortedArray mutableCopy];
+            [self.tableView reloadData];
             break;
-        case 1:
-            NSLog(@"second");
+        }
+        case 1: {
+            NSLog(@"Sort by reverse alphabetical");
             break;
+        }
         default:
             break;
+    }
+    
+}
+
+
+- (IBAction)doneAction:(id)sender {
+    for (int i=0; i < selectedObjects.count; i++) {
+        Fruit *oneFruit = selectedObjects[i];
+        NSLog(@"%@", oneFruit.name);
     }
     
 }

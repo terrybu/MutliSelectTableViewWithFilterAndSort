@@ -56,7 +56,13 @@
                             <constraint firstItem="LVc-0p-tVX" firstAttribute="top" secondItem="K7F-zT-KVX" secondAttribute="bottom" id="yWQ-s6-21R"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="QUl-sL-BYP"/>
+                    <navigationItem key="navigationItem" title="Home" id="QUl-sL-BYP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="DR1-fq-5qW">
+                            <connections>
+                                <action selector="doneAction:" destination="0k1-ew-k58" id="I4K-oN-tN7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchDisplayController" destination="Uk5-yL-i1M" id="Tgp-Su-N7j"/>
                         <outlet property="tableView" destination="30a-Mk-0Cp" id="i5w-d7-zhJ"/>
