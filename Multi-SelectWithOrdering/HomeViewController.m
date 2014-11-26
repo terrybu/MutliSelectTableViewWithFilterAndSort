@@ -114,7 +114,6 @@
         else if (selectedFruit.checkmarkFlag == NO) {
             cell.accessoryType = UITableViewCellAccessoryNone;
         }
-        cell.textLabel.text = selectedFruit.name;
     }
     else {
         //if we are in filter search results view
@@ -125,9 +124,8 @@
         else if (selectedFruit.checkmarkFlag == NO) {
             cell.accessoryType = UITableViewCellAccessoryNone;
         }
-        cell.textLabel.text = selectedFruit.name;
     }
-    
+    cell.textLabel.text = selectedFruit.name;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //to make sure there's no gray highlighting when it's clicked - important
     

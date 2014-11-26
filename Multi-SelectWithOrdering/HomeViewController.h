@@ -13,7 +13,6 @@
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 - (IBAction)segCtrlAction:(id)sender;
-
 - (IBAction)doneAction:(id)sender;
 
 
