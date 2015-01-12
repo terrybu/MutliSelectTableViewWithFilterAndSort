@@ -2,7 +2,7 @@
 //  HomeViewController.m
 //  Multi-SelectWithOrdering
 //
-//  Created by Aditya Narayan on 11/13/14.
+//  Created by Terry Bu on 11/13/14.
 //  Copyright (c) 2014 TerryBuOrganization. All rights reserved.
 //
 
@@ -69,7 +69,20 @@
     //these two lines make sure that both Filterview and Tableview data are refreshed - without it, it doesn't work
 }
 
-
+- (void)searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
+{
+    [self.searchDisplayController.searchBar setShowsCancelButton:YES animated:NO];
+    UIButton *cancelButton;
+    UIView *topView = self.searchDisplayController.searchBar.subviews[0];
+    for (UIView *subView in topView.subviews) {
+        if ([subView isKindOfClass:NSClassFromString(@"UINavigationButton")]) {
+            cancelButton = (UIButton*)subView;
+        }
+    }
+    if (cancelButton) {
+        [cancelButton setTitle:@"Done" forState:UIControlStateNormal];
+    }
+}
 
 
 

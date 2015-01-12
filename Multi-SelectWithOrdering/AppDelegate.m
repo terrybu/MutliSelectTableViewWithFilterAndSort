@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  Multi-SelectWithOrdering
 //
-//  Created by Aditya Narayan on 11/13/14.
+//  Created by Terry Bu on 11/13/14.
 //  Copyright (c) 2014 TerryBuOrganization. All rights reserved.
 //
 
